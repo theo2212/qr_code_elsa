@@ -37,5 +37,7 @@ Maintenant que tes pages sont prêtes à être activées :
 
 ---
 
-### Astuce de test
-Avant d'envoyer la boîte, scanne chaque QR code avec ton propre téléphone pour vérifier que la page s'affiche bien avec les confettis ou l'effet de gage !
+### Astuce de test (Mode Anti-triche) 🕵️‍♂️
+1. Ouvre l'un des liens de ton site (ex: `index.html`) sur ton téléphone ou ordi.
+2. **IMPORTANT** : La toute première fois, tu vas recevoir un email de **FormSubmit** te demandant de confirmer ton adresse. Clique sur le bouton de confirmation dans cet email.
+3. À partir de là, chaque scan d'un QR code t'enverra une notification automatique par email !
