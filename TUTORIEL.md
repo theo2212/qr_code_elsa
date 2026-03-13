@@ -2,33 +2,30 @@
 
 Suis ces étapes simples pour mettre en ligne les pages et imprimer les QR codes.
 
-## Étape 1 : Mettre les pages en ligne (GitHub Pages)
+## Étape 1 : Activer les pages en ligne (GitHub Pages)
 
-C'est la méthode la plus simple et 100% gratuite.
+C'est la méthode la plus simple et 100% gratuite. J'ai déjà poussé les fichiers sur ton compte !
 
-1.  **Crée un compte GitHub** (si tu n'en as pas) sur [github.com](https://github.com).
-2.  **Crée un nouveau "Repository"** (dépôt) nommé `qr_code_elsa`.
-3.  **Téléverse (Upload)** tous les fichiers `.html` et le fichier `style.css` dans ce dépôt.
-4.  Va dans les **Settings** (Paramètres) de ton dépôt, puis dans l'onglet **Pages** (à gauche).
-5.  Sous "Build and deployment", choisis la branche `main` et clique sur **Save**.
-6.  Attends 1 minute. GitHub va te donner une URL du type `https://ton-pseudo.github.io/qr_code_elsa/`. **Copie cette URL.**
+1.  Va sur ton dépôt : [https://github.com/theo2212/qr_code_elsa](https://github.com/theo2212/qr_code_elsa)
+2.  Clique sur l'onglet **Settings** (Paramètres) tout en haut à droite.
+3.  Dans la colonne de gauche, clique sur **Pages**.
+4.  Sous "Build and deployment" > "Branch", sélectionne **main** (et laisse `/ (root)`) puis clique sur **Save**.
+5.  **ATTENDS 2 MINUTES.** Un bandeau apparaîtra en haut avec ton URL : `https://theo2212.github.io/qr_code_elsa/`.
+
+> [!IMPORTANT]
+> L'erreur 404 disparaîtra dès que tu auras cliqué sur "Save" et attendu que GitHub finisse le déploiement (le petit point à côté du nom de ton dépôt passera au vert).
 
 ## Étape 2 : Générer les QR Codes
 
-Maintenant que tes pages ont une adresse sur internet, il faut créer les images des QR codes.
+Maintenant que tes pages sont prêtes à être activées :
 
-1.  Ouvre le fichier `generate_qr.py` avec un bloc-notes ou ton éditeur de code.
-2.  Remplace `VOTRE_URL_GITHUB_ICI/` par l'URL que GitHub t'a donnée à l'étape précédente (garde bien le `/` à la fin).
-3.  Ouvre un terminal (Invite de commande sur Windows).
-4.  Installe la bibliothèque nécessaire en tapant :
-    ```bash
-    pip install qrcode[pil]
-    ```
-5.  Lance le script en tapant :
+1.  Ouvre le fichier `generate_qr.py` (j'ai déjà mis ton lien dedans !).
+2.  Ouvre un terminal (Invite de commande sur Windows).
+3.  Lance le script en tapant :
     ```bash
     python generate_qr.py
     ```
-6.  Un dossier `qr_codes` va apparaître avec tes 6 images PNG !
+4.  Un dossier `qr_codes` va apparaître avec tes 6 images PNG !
 
 ## Étape 3 : Impression et Préparation
 
